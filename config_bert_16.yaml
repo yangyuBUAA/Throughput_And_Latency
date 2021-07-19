@@ -1,0 +1,10 @@
+model_name: "bert"
+model_path: "huggingface_pretrained_model/bert-base-chinese"
+
+CURRENT_DIR: "/home/yangyu/Throughput_And_Latency/"
+DATA_DIR: "data/train.txt"
+
+
+
+
+max_length: 16

@@ -1,7 +1,11 @@
+import os
 import torch
-from transformers import BertModel, BertTokenizer
+from transformers import BertTokenizer, AutoModel
+from model.dataset import get_short_text_dataset
+def get_albert_model(config):
+    model = AutoModel.from_pretrained(os.path.join(config["CURRENT_DIR"], config["model_path"]))
+    return model
 
-def get_model(model_path):
-    model = BertModel.from_pretrained("")
-
-def get_tokenizer(model_path):
+def get_albert_dataset(config):
+    tokenizer = BertTokenizer.from_pretrained(os.path.join(config["CURRENT_DIR"], config["model_path"]))
+    return get_short_text_dataset(config, tokenizer)

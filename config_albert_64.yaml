@@ -1,0 +1,10 @@
+CURRENT_DIR: "/home/yangyu/Throughput_And_Latency/"
+DATA_DIR: "data/train.txt"
+
+
+model_name: "albert"
+model_path: "huggingface_pretrained_model/albert_chinese_tiny"
+
+
+
+max_length: 64
